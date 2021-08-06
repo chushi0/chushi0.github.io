@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+nav {
+    padding: 12px;
+    box-shadow: 0 1px 1px;
+}
+nav * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+noscript, .web-warning {
+    display: block;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}

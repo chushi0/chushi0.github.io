@@ -1,0 +1,66 @@
+.card-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card-layout a {
+    text-decoration: none;
+}
+
+.card {
+    display: block;
+    position: relative;
+    top: 0;
+    width: 168px;
+    height: 192px;
+    border: 2px solid;
+    border-radius: 0 0 22px 22px;
+    border-color: black;
+    margin: 16px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 100ms;
+}
+
+.card:hover {
+    background-color: #8882;
+    top: -12px;
+}
+
+.card img {
+    display: block;
+    width: 168px;
+    height: 96px;
+}
+
+.card .title {
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card:hover .title {
+    text-decoration: underline;
+}
+
+.card .detail {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: small;
+    color: gray;
+    max-height: 65px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
