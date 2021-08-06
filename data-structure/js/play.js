@@ -139,11 +139,10 @@ $(() => {
         scale += (delta > 0 ? 1 : -1) * 0.1;
         scale = Math.max(0.1, scale);
         scale = Math.min(10, scale);
-        console.log([delta, scale])
         updateTranslateInfo();
         redraw(canvas);
     };
-    canvas.bind("mousewheel", (e) => mouseWheel(e.wheelDelta));
+    canvas.bind("mousewheel", (e) => mouseWheel(e.originalEvent.wheelDelta));
     canvas.bind("DOMMouseScroll", (e) => mouseWheel(-e.detail));
 
     updateTranslateInfo();
